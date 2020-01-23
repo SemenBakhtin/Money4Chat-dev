@@ -1,0 +1,119 @@
+.top-bar {
+   background-color: @themecolor;
+   color: #fff;
+   font-size: 14px;
+
+   p {
+       display: inline-block;
+       margin: 0;
+       padding: 0;
+       padding-left: 5px;
+   }
+
+   .top-bar__email {
+       float: left;
+       padding-top: 3px;
+       padding-bottom: 3px;
+       padding-left: 5px;
+
+       .top-bar__email-i-wrapper {
+        display: inline-block;
+
+            i {
+                background-color: @themecolortint;
+                padding-top: 3px;
+                padding-right: 5px;
+                padding-bottom: 3px;
+                padding-left: 5px;
+                border-radius: 2px;
+            }
+       }
+   }
+   
+   .top-bar__social {
+       float: right;
+
+       a {
+        background-color: @themecolortint;
+        border-radius: 2px;
+        transition: 0.2s ease-in;
+
+            &:hover,&:focus,&:active {
+                background-color: #fff;
+                transition: 0.2s ease-in;
+            }
+       }
+
+       .top-bar__social__item-bg {
+           display: inline-block;
+           padding-top: 3px;
+           padding-bottom: 3px;
+           padding-right: 5px;
+       }
+
+       i {
+           padding: 3px 5px;
+           color: #fff;
+           transition: 0.2s ease-in;
+
+            &:hover,&:focus,&:active {
+                color: @themecolor;
+                transition: 0.2s ease-in;
+            }
+       }
+   }
+}
+
+.nav-block-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        text-decoration: none;
+
+        h1 {
+            margin: 0;
+            padding: 0;
+            padding-left: 30px;
+            padding-top: 20px;
+            font-size: 48px;
+            color: @themecolor;
+        }
+    }
+
+    ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style-type: none;
+            font-size: 24px;
+            transition: 0.2s ease-in;
+
+            &:hover,&:focus,&:active {
+                background-color: @themecolor;
+                transition: 0.2s ease-in;
+            }
+
+            a { display: block;
+                color: @menutext;
+                padding: 40px 50px;
+                transition: 0.2s ease-in;
+
+                &:hover,&:focus,&:active {
+                    color: #fff;
+                    transition: 0.2s ease-in;
+                }
+            }
+        }
+    }
+}
+
+.main-banner {
+    background-image: url(../img/bg-small.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+}
