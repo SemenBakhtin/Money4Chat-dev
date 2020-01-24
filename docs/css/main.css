@@ -142,17 +142,11 @@ body {
 }
 .language-switcher {
   position: absolute;
-  top: 20px;
-  right: 12px;
+  top: 34px;
+  right: 15px;
   color: #545454;
   z-index: 10000;
   cursor: pointer;
-}
-@media (min-width: 768px) {
-  .language-switcher {
-    top: 15px;
-    right: 15px;
-  }
 }
 .language-switcher::before {
   content: url(../img/flags/translate.png);
@@ -279,7 +273,8 @@ body {
 }
 .nav-block-wrapper ul li {
   list-style-type: none;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 700;
   transition: 0.2s ease-in;
 }
 .nav-block-wrapper ul li:hover,
@@ -291,7 +286,7 @@ body {
 .nav-block-wrapper ul li a {
   display: block;
   color: #545454;
-  padding: 20px 30px;
+  padding: 32px 30px;
   transition: 0.2s ease-in;
 }
 .nav-block-wrapper ul li a:hover,
