@@ -119,12 +119,83 @@ body {
 /* ==========================================================================
    Buttons
    ========================================================================== */
+.big-button {
+  text-align: left;
+}
+.big-button a {
+  display: inline-block;
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  background-color: #dd3333;
+  border-radius: 2px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
 /* ==========================================================================
    Logo
    ========================================================================== */
+.language-switcher-wrap {
+  position: relative;
+}
+.language-switcher {
+  position: absolute;
+  top: 20px;
+  right: 12px;
+  color: #545454;
+  z-index: 10000;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .language-switcher {
+    top: 15px;
+    right: 15px;
+  }
+}
+.language-switcher::before {
+  content: url(../img/flags/translate.png);
+  padding-top: 2px;
+}
+.language-switcher .language-name {
+  padding-left: 5px;
+  font-size: 16px;
+}
+.language-switcher .language-switcher__italian::after {
+  content: url(../img/flags/italian.png);
+  padding-top: 5px;
+}
+.language-switcher .language-switcher__russian::after {
+  content: url(../img/flags/russian.png);
+  padding-top: 5px;
+}
+.language-switcher .language-switcher__english::after {
+  content: url(../img/flags/english.png);
+  padding-top: 5px;
+}
 /* ==========================================================================
    Section
    ========================================================================== */
+.section {
+  margin-top: 50px;
+}
+.section .section__content-title h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.section .section__content-text {
+  font-size: 14px;
+  color: #545454;
+}
+.section .row {
+  margin-bottom: 50px;
+}
+.section .section__content-link a {
+  font-size: 16px;
+  font-weight: 700;
+  color: #dd3333;
+}
 /* ==========================================================================
    Footer
    ========================================================================== */
@@ -149,7 +220,6 @@ body {
   display: inline-block;
 }
 .top-bar .top-bar__email .top-bar__email-i-wrapper i {
-  background-color: #e35b5b;
   padding-top: 3px;
   padding-right: 5px;
   padding-bottom: 3px;
@@ -198,8 +268,8 @@ body {
   margin: 0;
   padding: 0;
   padding-left: 30px;
-  padding-top: 20px;
-  font-size: 48px;
+  padding-top: 10px;
+  font-size: 28px;
   color: #dd3333;
 }
 .nav-block-wrapper ul {
@@ -209,7 +279,7 @@ body {
 }
 .nav-block-wrapper ul li {
   list-style-type: none;
-  font-size: 24px;
+  font-size: 16px;
   transition: 0.2s ease-in;
 }
 .nav-block-wrapper ul li:hover,
@@ -221,7 +291,7 @@ body {
 .nav-block-wrapper ul li a {
   display: block;
   color: #545454;
-  padding: 40px 50px;
+  padding: 20px 30px;
   transition: 0.2s ease-in;
 }
 .nav-block-wrapper ul li a:hover,
@@ -231,9 +301,45 @@ body {
   transition: 0.2s ease-in;
 }
 .main-banner {
-  background-image: url(../img/bg-small.jpg);
+  position: relative;
+  background-image: url(../img/bg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 70vh;
+}
+.main-banner .main-banner__content-wrapper {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-family: 'Roboto', sans-serif;
+}
+.main-banner .main-banner__content-wrapper .main-banner__content-title {
+  color: #fff;
+}
+.main-banner .main-banner__content-wrapper .main-banner__content-title h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 28px;
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, 0.24);
+  padding: 6px 12px;
+  width: auto;
+  max-width: 32%;
+  margin-bottom: 16px;
+}
+.main-banner .main-banner__content-wrapper .main-banner__content-title h1 .themecolor {
+  color: #dd3333;
+}
+.main-banner .main-banner__content-wrapper .main-banner__content-text {
+  background-color: rgba(0, 0, 0, 0.24);
+  width: auto;
+  max-width: 55%;
+  margin-bottom: 24px;
+}
+.main-banner .main-banner__content-wrapper .main-banner__content-text p {
+  margin: 0;
+  padding: 6px 12px;
+  color: #fff;
 }

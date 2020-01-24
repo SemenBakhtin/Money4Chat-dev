@@ -22,30 +22,42 @@
 
 // Nav block
 .nav-block-wrapper
-    .logo
-        a(href="#")
-            h1 Money4Chat
-    nav.navigation-wrapper
-        ul
-            li
-                a(href="#", target="self") Home
-            li
-                a(href="#", target="self") About
-            li
-                a(href="#", target="self") Marketing
-    .language-switcher
+    .col-md-6
+        .logo
+            a(href="#")
+                h1 Money4Chat
+    .col-md-6
+        nav.navigation-wrapper
+            ul
+                li
+                    a(href="#", target="self") Home
+                li
+                    a(href="#", target="self") About
+                li
+                    a(href="#", target="self") Marketing
+
+    .language-switcher-wrap
+        .language-switcher.btn-group
+            .language-switcher__dropdown-menu.dropdown-toggle(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                span.language-name English
+            .dropdown-menu.dropdown-menu-right
+                a.dropdown-item.language-switcher__italian(href='#')
+                    span.language-name Italiano
+                a.dropdown-item.language-switcher__russian(rel='alternate', hreflang='ru', href='ru/')
+                    span.language-name Russian
 
 // //Nav block
 
 // Main banner
 
 .main-banner
-    .container.main-banner__content-wrapper
-        .main-banner__content-title
-            h1 lorem ipsum
-        .main-banner__content-text
-            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, deleniti inventore neque autem quaerat eaque, quibusdam explicabo suscipit consequuntur magnam dolorem ex sint, maxime nobis saepe similique ipsa tempore maiores.
-        .main-banner__content-button-wrapper
+    .main-banner__content-wrapper
+        .container
+            .main-banner__content-title
+                h1 lorem 
+                    span.themecolor ipsum
+            .main-banner__content-text
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
             .big-button
                 a(href="#", target="self") Lorem
 
