@@ -128,7 +128,7 @@ body {
   padding-right: 20px;
   padding-bottom: 15px;
   padding-left: 20px;
-  background-color: #dd3333;
+  background-color: #ff0000;
   border-radius: 2px;
   text-decoration: none;
   color: #fff;
@@ -189,10 +189,10 @@ body {
 .section .section__content-link a {
   font-size: 16px;
   font-weight: 700;
-  color: #dd3333;
+  color: #ff0000;
 }
 .section .highlighted-text {
-  color: #dd3333;
+  color: #ff0000;
 }
 .section .section__heading {
   font-weight: 700;
@@ -209,7 +209,7 @@ body {
    Footer
    ========================================================================== */
 .top-bar {
-  background-color: #dd3333;
+  background-color: #ff0000;
   color: #fff;
   font-size: 14px;
 }
@@ -239,7 +239,7 @@ body {
   float: right;
 }
 .top-bar .top-bar__social a {
-  background-color: #e35b5b;
+  background-color: #ff2727;
   border-radius: 2px;
   transition: 0.2s ease-in;
 }
@@ -263,7 +263,7 @@ body {
 .top-bar .top-bar__social i:hover,
 .top-bar .top-bar__social i:focus,
 .top-bar .top-bar__social i:active {
-  color: #dd3333;
+  color: #ff0000;
   transition: 0.2s ease-in;
 }
 .nav-block-wrapper {
@@ -279,7 +279,7 @@ body {
   padding-left: 30px;
   padding-top: 10px;
   font-size: 28px;
-  color: #dd3333;
+  color: #ff0000;
 }
 .nav-block-wrapper ul {
   display: flex;
@@ -295,7 +295,7 @@ body {
 .nav-block-wrapper ul li:hover,
 .nav-block-wrapper ul li:focus,
 .nav-block-wrapper ul li:active {
-  background-color: #dd3333;
+  background-color: #ff0000;
   transition: 0.2s ease-in;
 }
 .nav-block-wrapper ul li a {
@@ -340,7 +340,7 @@ body {
   margin-bottom: 16px;
 }
 .main-banner .main-banner__content-wrapper .main-banner__content-title h1 .themecolor {
-  color: #dd3333;
+  color: #ff0000;
 }
 .main-banner .main-banner__content-wrapper .main-banner__content-text {
   background-color: rgba(0, 0, 0, 0.24);
