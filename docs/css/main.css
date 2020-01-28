@@ -205,14 +205,6 @@ body {
   font-size: 14px;
   color: #545454;
 }
-.section .red-outline {
-  border: 3px solid #ff0000;
-  padding-top: 10px;
-}
-.section .red-outline--addpadding {
-  padding-right: 10px;
-  padding-left: 10px;
-}
 /* ==========================================================================
    Footer
    ========================================================================== */
@@ -360,8 +352,4 @@ body {
   margin: 0;
   padding: 6px 12px;
   color: #fff;
-}
-.red-outline {
-  border: 3px solid #ff0000;
-  padding-top: 10px;
 }
