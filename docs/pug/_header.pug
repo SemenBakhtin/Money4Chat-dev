@@ -1,33 +1,19 @@
-
-// Top bar
-//- .top-bar.clearfix
-//-     .top-bar__email
-//-         .top-bar__email-i-wrapper
-//-             i.fa.fa-envelope-o(aria-hidden="true")
-//-         p support@money4chat.com
-//-     .top-bar__social
-//-         .top-bar__social__item-bg
-//-             a.top-bar__social__item(href="#")
-//-                 i.fa.fa-vk(aria-hidden="true")
-//-         .top-bar__social__item-bg
-//-             a.top-bar__social__item(href="#")
-//-                 i.fa.fa-facebook(aria-hidden="true")
-//-         .top-bar__social__item-bg
-//-             a.top-bar__social__item(href="#")
-//-                 i.fa.fa-instagram(aria-hidden="true")
-//-         .top-bar__social__item-bg
-//-             a.top-bar__social__item(href="#")
-//-                 i.fa.fa-telegram(aria-hidden="true")
-// //Top bar 
-
 // Nav block
 .nav-block-wrapper
-    .col-md-6
+    .container.navigation
+
         .logo
             a(href="#")
                 img(src="img/logo.png", alt="Money4Chat")
-    .col-md-6
-        nav.navigation-wrapper
+
+        button.menu-link
+            span.line.line-1
+            span.line.line-2
+            span.line.line-3
+
+        #navigation-toggle.navigation__toggle-button 
+
+        nav.navigation-list
             ul
                 li
                     a(href="#", target="self") Home
@@ -36,32 +22,11 @@
                 li
                     a(href="#", target="self") Marketing
 
-    .language-switcher-wrap
-        .language-switcher.btn-group
-            .language-switcher__dropdown-menu.dropdown-toggle(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                span.language-name English
-            .dropdown-menu.dropdown-menu-right
-                a.dropdown-item.language-switcher__italian(href='#')
-                    span.language-name Italiano
-                a.dropdown-item.language-switcher__russian(rel='alternate', hreflang='ru', href='ru/')
-                    span.language-name Russian
-
 // //Nav block
 
 // Main banner
-.container
-    .row.main-banner
-        //- .main-banner       
-            //- .main-banner__content-wrapper
-                //- .container
-                //-     .main-banner__content-title
-                //-         h1 lorem 
-                //-             span.themecolor ipsum
-                //-     .main-banner__content-text
-                //-         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                //-     .big-button
-                //-         a(href="#", target="self") Lorem
-
+//- .container
+//-     .row.main-banner
 
 // // Main banner
     

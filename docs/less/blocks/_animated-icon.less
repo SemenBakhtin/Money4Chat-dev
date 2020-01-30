@@ -1,0 +1,53 @@
+.menu-link {
+
+    @media (min-width:1200px) {
+        display: none;
+    }
+
+    position: absolute;
+    top: 14px;
+    right: 10px;
+
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 20px 20px 20px 20px;
+    display: block;
+    float:right;
+    
+    span {
+    display:block;
+    height: 2px;
+    width: 32px;
+    background: #000;
+    margin: 5px 0;
+    transition: transform 0.1s linear;
+    }
+
+    &:hover, &:focus {
+        outline: none;
+        .line-1 {
+            transform: translateY(-2px);
+        }
+        .line-3 {
+            transform: translateY(2px);
+        } 
+
+    }
+
+    &.active {
+        outline: none;
+        span {
+            transition: transform 0.2s ease-out, opacity 0.1s linear;
+        }
+        .line-1 {
+            transform: translateY(7px) translateX(0) rotate(45deg);
+        }
+        .line-2 {
+            opacity:0;
+        }
+        .line-3 {
+            transform: translateY(-7px) translateX(0) rotate(-45deg);
+        }
+    }
+}
